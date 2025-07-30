@@ -1,0 +1,144 @@
+#Tuple swaping
+a=1
+b=2
+a,b=b,a
+print(a,b)
+
+
+
+#temporarily variable swaping 
+a=1
+b=2
+print("a:",a)
+print("b:",b)
+temp=a
+a=b
+b=temp
+print("a:",a)
+print("b:",b)
+
+
+
+#swaping using arithmetic operators(addition and subtraction)
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+a=a+b
+b=a-b
+a=a-b
+print("after swaping:")
+print("a:",a)
+print("b:",b)
+
+
+
+#swaping using arithmetic operators(multiplication and division)
+a=int(input("enter the value of a:"))
+b=int(input("enter the value of b:"))
+a=a*b
+b=a/b
+a=a/b
+print("after swaping:")
+print("a:",a)
+print("b:",b)
+
+
+
+#data types list
+fruits=["apple","banana","kiwi"]
+print(fruits)
+print(fruits[2])
+
+
+
+#data types list
+fruits=["apple","banana","kiwi"]
+print(fruits)
+print(fruits[-1])
+
+
+
+#string method
+nums=[0,1,2,3,4,5,9,8,7,6]
+print(len(nums))
+
+
+
+#not print 0 ,4,5
+nums=[0,1,2,3,4,5]
+print(nums[1:4])
+print(nums[3:6])
+print(nums[:3])
+print(nums[::2])
+print(nums[::-1])
+print(nums[:-1])
+
+
+
+nums=[0,1,2,3,4,5]
+print(6 in nums)
+print(3 in nums)
+
+
+
+fruits=["apple","mango","cherry"]
+fruits.sort()
+print(fruits)
+
+
+
+fruits=["apple","mango","cherry"]
+fruits.reverse()
+print(fruits)
+
+
+
+#nested list
+nestnum=[[1,2],[3,4],[5,6]]
+print(nestnum[1])
+print(nestnum[2][0])
+print(nestnum[1][1])
+print(nestnum[2][1])
+
+
+
+#reverse the string with respect to their index
+#str='india won'   output 'aidni now'
+text="india won"
+word=text.split()
+w1=word[0][::-1]
+w2=word[1][::-1]
+result=' '.join([w1,w2])
+print(result)
+
+
+
+print("india".capitalize())
+print("india".isascii())
+print("6".ljust(10,"$"))
+print("6".rjust(10,"$"))
+print("india".swapcase())
+print("661".zfill(4))
+print("india wins".title())
+#find
+print("one key for a lock".find("for"))
+print("one key for a lock".rfind("for"))
+#index
+print("one key for a lock".index("for"))
+print("one key for a lock".rindex("for"))
+#count
+print("mississippi".count('s'))
+#isalnum()
+print("JamesBond 007".isalnum())
+#isalpha()
+print("JamesBond".isalpha())
+#isdigit
+print("444".isdigit())
+#isdecimal
+print("444".isdecimal())
+#islower
+print("hi".islower())
+#isupper
+print("hi".isupper())
+#space
+print(" ".isspace())
+
