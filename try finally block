@@ -1,0 +1,101 @@
+#try finally block
+try:
+    print("Raising exception.....")
+    raise ValueError
+finally:
+    print("performing clean-up with finally.....")
+
+
+
+#try finally block
+try:
+    print("Raising exception.....")
+    raise ValueError
+except:
+    print("exception caught....")
+finally:
+    print("performing clean-up with finally.....")
+
+
+
+try:
+    print("dividing two strings..")
+    try:
+        quo="abc"/"abc"
+        print(quo)
+    finally:
+        print("this is the finally block.....which execute everytime")
+except TypeError:
+    print("here the type error is handled which is reversed in the inner try")
+
+
+
+try:
+    f=open("abcd.txt")
+except:
+    print("file doesnot exist.....")
+    raise
+
+
+
+#assert statement (to find temperature)
+c=int(input("enter the temperature in c"))
+f=(c*9/5)+32
+assert(f<=32),"its frequency"
+print("temperature in fahrenheit",f)
+
+
+
+num=int(input("enter the number:"))
+try:
+    output=num*num
+    print(output)
+except KeyboardInterupt:
+    print("program has been interupted")
+
+
+
+n=0
+while True:
+    try:
+        n=n+1
+        if n==31:
+            raise StopIteration
+        else:
+            print(n,end=" ")
+    except StopIteration:
+        break
+
+
+
+try:
+    size=int(input("enter size"))
+    user_list=[]
+    for i in range(size):
+        value=int(input(f"enter element{i+1}"))
+        user_list.append(value)
+    index=int(input("enter index to access element:"))
+    print("element of index",index,"is",user_list[index])
+except ValueError:
+    print("Error: please after only integers")
+except IndexError:
+    print("Error index....out of ranfe....")
+
+
+
+#list comprehension
+print([num**2 for num in range(1,11)])
+
+
+
+print([x for x in range(1,11) if x%2==0])
+
+
+
+words=["apple","banana","cherry"]
+print([word.upper() for word in words])
+
+
+
+
+
